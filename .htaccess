@@ -1,0 +1,13 @@
+RewriteEngine On
+
+RewriteRule ^dashboard?$ index.php
+
+RewriteRule ^cadastrar/prova$ cadastrar-prova.php
+
+RewriteRule ^cadastrar/questao$ cadastrar-questao.php
+
+RewriteRule ^prova$ ver-provas.php
+
+RewriteRule ^prova/([0-9]+) prova.php?prova=$1
+
+RewriteRule ^prova/questao/([0-9]+) questao.php?questao=$1
